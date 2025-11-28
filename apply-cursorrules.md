@@ -1,6 +1,6 @@
 # apply-cursorrules
 
-私の管理する以下のリポジトリから最新のCursorrulesを取得し、本プロジェクトに適用してください。
+次のリポジトリから最新のCursorrulesを取得し、本プロジェクトに適用してください。
 https://github.com/nagisora/cursorrules
 
 ## 前提条件
