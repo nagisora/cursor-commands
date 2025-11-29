@@ -67,12 +67,14 @@ https://github.com/kinopeee/cursorrules
    - `.cursor/` 配下のファイル（`rules/` と `commands/` を含む）が変更されていることを確認
 
 2. **コミット**
-   - カスタムコマンド `/commit` のルールに準拠してコミットメッセージを作成
-   - `/commit` コマンドのルールが不明な場合は、以下の形式を推奨:
-     - タイトル: `chore: update cursorrules from kinopeee/cursorrules`
-     - 本文: 適用した内容を記載（例: "日本語版の設定を適用"）
-   - `git add .cursor/`
-   - `git commit -m "[コミットメッセージ]"`
+   - コミットメッセージの書式は `.cursor/rules/commit-message-format.mdc` のルール（Prefix + サマリ + 箇条書き、日本語）に従って作成する
+   - コミットおよびプッシュの実行方法は、カスタムコマンド `/commit-push` のルール（`commit-push.md`）に従う
+   - ローカルで手動実行する場合の一例:
+     ```bash
+     git add .cursor/
+     git commit
+     ```
+   - エディタで開いたコミットメッセージに、上記ルールに沿ってサマリと箇条書き本文を記述する
 
 3. **プッシュ**
    - `git push origin main` でリモートに反映
