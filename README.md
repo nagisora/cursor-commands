@@ -84,6 +84,11 @@ PR URL: https://github.com/owner/repo/pull/123
 レビューコメント URL: https://github.com/owner/repo/pull/123#discussion_r1234567890
 ```
 
+### 5. `remove-ai-code-slop`
+
+現在の作業ブランチで `main` との差分を確認し、AI生成と思われるスロップ（不要生成物）を取り除くためのコマンドです。
+これは、CursorのEricさんより提案されたベストプラクティス（[引用元](https://x.com/ericzakariasson/status/1995671800643297542?s=20)）です。
+
 ## 🔧 前提条件
 
 - **Cursor IDE** がインストールされていること
