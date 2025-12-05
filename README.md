@@ -20,7 +20,7 @@ Cursorのカスタムコマンド機能を使用して、よく使う開発タ�
 
 ### 1. `apply-cursorrules`
 
-GitHubリポジトリから最新のCursorrulesを取得し、現在のプロジェクトに適用します。
+[きのぴーさんのGitHubリポジトリ](https://github.com/kinopeee/cursorrules)から最新のCursorrulesを取得し、現在のプロジェクトに適用します。
 
 **主な機能:**
 - 指定されたリポジトリから `.cursor/rules/` ファイルを取得
