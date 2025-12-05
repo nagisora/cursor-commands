@@ -84,7 +84,31 @@ PR URL: https://github.com/owner/repo/pull/123
 レビューコメント URL: https://github.com/owner/repo/pull/123#discussion_r1234567890
 ```
 
-### 5. `remove-ai-code-slop`
+### 5. `pr-merge-cleanup`
+
+現在のブランチのプルリクエストをマージし、ブランチ削除・main最新化を行うコマンドです。
+
+**主な機能:**
+- 現在のブランチからPR番号を自動検出
+- PRの状態確認（マージ可能かチェック）
+- PRのマージ（通常マージ/スカッシュマージ/リベースマージに対応）
+- リモートブランチの自動削除
+- mainブランチへの切り替えと最新化
+- ローカルブランチの削除
+
+**使用例:**
+```
+/pr-merge-cleanup
+```
+
+マージ方法を指定する場合:
+```
+/pr-merge-cleanup
+
+スカッシュマージでお願いします
+```
+
+### 6. `remove-ai-code-slop`
 
 現在の作業ブランチで `main` との差分を確認し、AI生成と思われるスロップ（不要生成物）を取り除くためのコマンドです。
 これは、CursorのEricさんより提案されたベストプラクティス（[引用元](https://x.com/ericzakariasson/status/1995671800643297542?s=20)）です。
